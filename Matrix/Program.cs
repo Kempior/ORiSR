@@ -13,7 +13,7 @@ namespace Matrix
 		static void Main(string[] args)
 		{
 			object _ = new object();
-			const int N = 100;
+			const int N = 2000;
 			Random rand = new Random();
 
 			Console.Write("Generating matrices...\t");
