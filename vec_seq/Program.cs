@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Vector
@@ -12,7 +10,7 @@ namespace Vector
 		static void Main(string[] args)
 		{
 			object _ = new object();
-			const int N = 100_000_000;
+			const int N = 200_000_000;
 			Random rand = new Random();
 
 			Console.Write("Generating vectors...\t");
@@ -103,7 +101,7 @@ namespace Vector
 					int count = (((int, int))chunk).Item2;
 					int end = offset + count;
 					if (N <= end)
-						end = N - 1;
+						end = N;
 
 					double partialSum = 0;
 
